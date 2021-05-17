@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/testing_background.png')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        You and your team have spoken and done some research and you all realized
+        that there are databases designed for this specific reason, and if its good
+        enough for research then it’s good enough for this project. Lucky for you
+        and your team, it can now recognize humans with 99% accuracy!
+      </p>
+      <div id="choices">
+        <button id="choice1" class="choice" onclick="setAccuracy('Fully Accurate'); document.location='scene13.html'">
+            CONTINUE
+        </button>
+      </div>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

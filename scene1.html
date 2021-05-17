@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="background: url('images/kitchen_background.jpg')";>
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene1()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        You are a software developer at a company. Before heading into work you
+        have to decide what to make. What are you eating for breakfast?
+      </p>
+      <div id="choices">
+        <button id="choice1" class="choice" onClick="document.location='scene2.html'">
+            Cereal
+        </button>
+        <button id="choice2" class="choice" onClick="document.location='scene2.html'">
+            Pancakes and Fruit
+        </button>
+      </div>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

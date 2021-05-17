@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/apple_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene8()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        Since you've chosen that the security system should have a fingerprint scan as a password to the system,
+        you should now choose who is required to do a scan. Should it be...
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="incr(1);document.location='scene9.html'">
+            Owners Only
+        </button>
+        <button id="choice2" class="choice" onclick="incr(2);document.location='scene9.html'">
+            Apple Partnership
+        </button>
+      </div>
+      <button id="nextButton" onclick="next8()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

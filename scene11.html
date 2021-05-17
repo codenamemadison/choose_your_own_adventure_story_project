@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/testing_background.png');">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene11()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+       You have decided to test the AI on your current teammates.
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="document.location='scene13.html'">
+            Work with what you have (somewhat accurate)
+        </button>
+        <button id="choice2" class="choice" onclick="document.location='scene13.html'">
+            Do more testing but not at full effort (mostly accurate)
+        </button>
+        <!-- ONCLICK FUNCTION WILL BE RANDOMIZED -> WILL DETERMINE SCENE PATH
+          > IF GIVEN EXTENSION:     SCENE 11 ->  ACCEPTED   -> 12 -> 14 or 15
+          > IF NOT GIVEN EXTENSION: SCENE 11 -> 11B (DENIED)-> 13 -> 14 or 15
+              > 12 & 13 basically do same thing (ask about security issue)
+        -->
+        <button id="choice3" class="choice">
+            Try asking for an extension (will either be denied an extension or possibly given and
+            allows for a fully accurate system to be made)
+        </button>
+      </div>
+      <button id="nextButton" onclick="next11()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

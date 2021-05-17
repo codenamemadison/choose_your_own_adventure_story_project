@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/testing_background.png');">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene11b()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+    Your extension request was denied. What do you want to do?
+      </p>
+      <div id="choices">
+        <button id="choice1" class="choice" onclick="setAccuracy('Somewhat Accurate'); setRa(false); document.location='scene13.html'">
+            Work with what you have (somewhat accurate)
+        </button>
+        <button id="choice2" class="choice" onclick="setAccuracy('Mostly Accurate'); setRa(true); document.location='scene13.html'">
+            Do more testing but not at full effort (mostly accurate)
+        </button>
+      </div>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

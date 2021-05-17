@@ -1,0 +1,80 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+   font-weight: bold;
+}
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+}
+
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+   font-weight: bold;
+}
+body {
+  /*background-image: url("images/green_wormhole.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  */
+}
+h1 {
+  font-family: myFirstFont;
+  color: #F5FBEF;
+  text-shadow:7px 7px #C52000;
+  text-align: center;
+  font-size: 600%;
+  margin-top: 15%;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #ff9e4a;
+  text-shadow: 4px 4px #350000;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: mySecondFont;
+}
+
+
+.center {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#startButton {
+  width: 50%;
+  padding: 25px;
+  border: none;
+  background-color: #C52000;
+  color: #F5FBEF;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5px;
+  border-radius: 12px;
+  font-family: myFirstFont;
+}
+
+#startButton:hover {
+  background-color: #350000;
+}

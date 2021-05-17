@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/security_issue_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene13()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+
+
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        While running more tests,
+        one of the software engineers noticed there’s an small security issue that could
+        put some of the private information being collected at risk of being easily breached.
+        However, your boss has informed you that you have a deadline to finish the final
+        product to show investors who would launch the product soon.
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="document.location='scene14.html'">
+            Rush and try to fix the issue
+        </button>
+        <button id="choice2" class="choice" onclick="document.location='scene15.html'">
+            Do nothing
+        </button>
+      </div>
+      <button id="nextButton" onclick="next13()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/testing_background.png')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene17()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+      <p id="textBox">
+        You decided to test the system using images from Google Images.
+        <br> <br>
+        But, uh oh! I guess using Google Images for testing the AI wasn't such a great
+        idea. It's working, but there seems to be a reoccurring issue.
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="setAccuracy('Somewhat Accurate'); setGen(false); document.location='scene13.html'">
+            Work with what you have (somewhat accurate)
+        </button>
+        <button id="choice2" class="choice" onclick="setAccuracy('Mostly Accurate'); setGen(true); document.location='scene13.html'">
+            Do more testing but not at full effort (mostly accurate)
+        </button>
+        <!-- ONCLICK DEPENDS ON RANDOMIZED VALUE
+        > IF GIVEN EXTENSION:     SCENE 17 ->  ACCEPTED  -> 19 -> 14 OR 15
+        > IF NOT GIVEN EXTENSION: SCENE 17 -> 18 (DENIED)-> 13 -> 14 or 15
+       -->
+        <button id="choice3" class="choice">
+          Try asking for an extension (will either be denied an extension or possibly given and
+          allows for a fully accurate system to be made)
+        </button>
+      </div>
+      <button id="nextButton" onclick="next17()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

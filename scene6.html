@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/live_or_photo_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene6()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+
+
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+      <p id="textBox">
+        Now that you have decided to use AI, it is time to decide just how much personal
+        information this system is going to collect and in what manner. You can either...
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="document.location='scene7.html'">
+            Live Recognition
+        </button>
+        <button id="choice2" class="choice" onclick="incr(1); document.location='scene7.html'">
+            Photos
+        </button>
+      </div>
+      <button id="nextButton" onclick="next6()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

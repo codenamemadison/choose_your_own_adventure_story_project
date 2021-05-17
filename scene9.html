@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/police_database_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene9()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        These ideas are really starting to take shape! This has drawn the attention
+        of law enforcement. You've been given the oppurtunity to work with the police on this project.
+        By working with them, your team will have access to the police database of criminal records and mugshots.
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="incr(1); document.location='scene10.html'">
+            Use police database
+        </button>
+        <button id="choice2" class="choice" onclick="document.location='scene10.html'">
+            Don't use police database
+        </button>
+      </div>
+      <button id="nextButton" onclick="next9()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

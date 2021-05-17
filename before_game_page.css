@@ -1,0 +1,133 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+   font-weight: bold;
+}
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+}
+
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+   font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#firstSee {
+  padding-top: 100px;
+  text-align: center;
+}
+h1 {
+  font-family: myFirstFont;
+  color: #c4cdff;
+  text-shadow:4px 4px #43bfb3;
+  text-align: center;
+  margin: auto;
+  font-size: 500%;
+  padding-top: 5%;
+  width: 90%;
+  line-height: 110px;
+  height: 110px;
+}
+#scrollDownArrow {
+  width: 7%;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+h2 {
+  color: #43bfb3;
+  text-shadow: 2px 2px #2B2C28;
+  text-align: center;
+  font-size: 27px;
+  text-shadow: 2px 2px #131515;
+  font-family: mySecondFont;
+}
+
+a:link {
+  color: #43bfb3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #43bfb3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+p {
+  background-color:rgb(46, 70, 173, 0.8);
+  color:white;
+  width:55%;
+  padding: 30px;
+  margin: auto;
+  font-family: mySecondFont;
+  font-size: 20px;
+}
+
+#scrollHere {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#text2read {
+  padding: 1%;
+
+}
+.eye {
+  width:100px;
+}
+#continueButton {
+  width: 50%;
+  padding: 20px;
+  background-color: #43bfb3;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  font-family: mySecondFont;
+}
+#continueButton:hover {
+  background-color: #339989;
+}

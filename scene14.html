@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/security_issue_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene14()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        You have decided to rush and try to fix the errors before your deadline.
+        <!-- The next message would depend on randomized result of if rushing worked or not ] -->
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="document.location='scene16.html'">
+            RELEASE PRODUCT!
+        </button>
+      </div>
+      <button id="nextButton" onclick="next14()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

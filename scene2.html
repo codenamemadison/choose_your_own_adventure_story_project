@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/boss_asks_you_to_be_pm_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+</head>
+<script>
+</script>
+<body onload="scene2()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        After breakfast you make it into work, it's just a normal
+        day until your boss invites you into his office and presents you with an
+        opportunity.
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="document.location='scene3.html'">
+            YES
+        </button>
+        <button id="choice2" class="choice"> <!-- POSSIBLE ENDING -->
+            NO
+        </button>
+      </div>
+      <button id="nextButton" onclick="next2()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

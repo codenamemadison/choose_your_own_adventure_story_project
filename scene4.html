@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/conference_room_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene4()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <img id="diverse_silhouettes" src="images/people/diverse_team.png" style="display:none">
+  <img id="nondiverse_silhouettes" src="images/people/nondiverse_team.png" style="display:none">
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        Now with your team assembled, you need to focus on finding the funds to complete your project.
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice"> <!-- POSSIBLE ENDING -->
+            Kickstarter
+        </button>
+        <button id="choice2" class="choice"> <!-- POSSIBLE ENDING -->
+            Non-profit robbery
+        </button>
+        <button id="choice3" class="choice" onclick="document.location='scene5.html'">
+            Get private investors
+        </button>
+        <button id="choice4" class="choice" onclick="document.location='scene5.html'">
+            CONTINUE TO NEXT SCENE
+        </button>
+      </div>
+      <button id="nextButton" onclick="next4()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

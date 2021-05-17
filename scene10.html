@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/photo_testing_background.jpg')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene10()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        The coding has finally begun. You have a solid baseline of what you want
+        to include in this project, and your team has started working on the AI. However,
+        there's an issue!
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="document.location='scene11.html'">
+            Test on photos of current employees (your teammates)
+        </button>
+        <button id="choice2" class="choice" onclick="document.location='scene17.html'">
+            Test on Google Images of people
+        </button>
+        <!-- SKIPS MANY SCENES ABOUT ISSUES WITH INCLUSIVITY/DIVERSITY - #10 -> #20 -> #13 -->
+        <button id="choice3" class="choice" onclick="document.location='scene20.html'">
+            Test with a huge database found online of images of people
+        </button>
+      </div>
+      <button id="nextButton" onclick="next10()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>

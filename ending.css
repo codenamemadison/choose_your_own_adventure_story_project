@@ -1,0 +1,75 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+}
+
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+   font-weight: bold;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#everything {
+  padding: 7%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+h1 {
+  font-family: myFirstFont;
+  color: #ff960d;
+  text-shadow:4px 4px #7a4b0d;
+  font-size: 500%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+#messageBox {
+  width: 75%;
+  padding: 5px;
+  margin-top:-3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  color: white;
+  font-family: mySecondFont;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+button {
+  font-family: myFirstFont;
+  color: white;
+  height: 60px;
+  weight: 20%;
+  font-size: 30px;
+  border-radius: 25px;
+  border: 5px solid rgb(46, 70, 173);
+  background-color: rgb(46, 70, 173);
+  margin-top: 20px;
+}

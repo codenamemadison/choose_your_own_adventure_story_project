@@ -1,0 +1,229 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(futuristicfont/sofachrome_rg-webfont.woff);
+   font-weight: bold;
+}
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+}
+
+@font-face {
+   font-family: mySecondFont;
+   src: url(messagefont/babydoll-webfont.woff);
+   font-weight: bold;
+}
+html {
+  /* <!-- SCENE 7, 11b, 14, 15, 18, 20; --> without next
+  different backgrounds:
+  breakfast scene - "images/kitchen_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/kitchen_background.jpg')";
+  * document.getElementById("personTalking").style.display = "none";
+
+  arrive at work and asked to be PM scene - "images/boss_asks_you_to_be_pm_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/boss_asks_you_to_be_pm_background.jpg')";
+  ** document.getElementById("personTalking").style.innerHTML = "Your Boss";
+  ** document.getElementById("personTalking").style.display = "inline"; -> FOR DIALOGUE
+
+  hiring scene - "images/conference_room_background.jpg" plus toggle on #diverse_silhouettes
+  * document.getElementById("html").style.background-image = "url('images/conference_room_background.jpg)";
+  * document.getElementById("diverse_silhouettes").style.display = "block";
+  > if hired friends or randoms, keep #diverse_silhouettes on
+
+  > if hired boss' friends, toggle #diverse_silhouettes off and #nondiverse_silhouettes on
+  * document.getElementById("diverse_silhouettes").style.display = "none";
+  * * document.getElementById("nondiverse_silhouettes").style.display = "block";
+
+  > show the ppl in next scene
+
+  asking about funding scene - "images/funding_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/funding_background.jpg')";
+
+
+  AI or manual system scene - "images/ai_vs_manual_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/ai_vs_manual_background.jpg')";
+
+  live or photos scene - "images/live_or_photo_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/live_or_photo_background.jpg')";
+
+  fingers or none scene - "images/fingerprint_or_no_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/fingerprint_or_no_background.jpg')";
+
+  police database or none scene - "images/police_database_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/police_database_background.jpg')";
+
+  google image testing scene - "images/photo_testing_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/photo_testing_background.jpg')";
+
+  security issue - "images/security_issue_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/security_issue_background.jpg')";
+
+  investors - product launch scene - "images/investors_background.jpg"
+  * document.getElementById("html").style.background-image = "url('images/investors_background.jpg')";
+
+  if no security breach - "images/celebration_background.jpg
+  * document.getElementById("html").style.background-image = "url('images/celebration_background.jpg')";
+
+  */
+
+  /* makes background take up full webpage without stretching or grapes */
+  background: url("images/kitchen_background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: myFirstFont;
+  color: #c4cdff;
+  text-shadow:3px 3px rgb(46, 70, 173);
+}
+#bottomSection {
+  position: fixed;
+  left: 0;
+  top: 57%;
+  width: 100%;
+}
+#textAndChoicesBox {
+  border-radius: 25px;
+  text-align: center;
+  overflow: hidden;
+  border: 4px solid #c4cdff;
+  width: 75%;
+  padding-top: 20px;
+  background-color: rgb(46, 70, 173, 0.7);
+  margin: auto;
+  position: relative;
+  z-index: 1;
+
+}
+
+/*
+#personTalking {
+  border-radius: 40px;
+  border: 5px solid rgb(46, 70, 173);
+  background-image: linear-gradient(to bottom right, white, rgb(145, 175, 255));
+  background-color: ;
+  overflow: hidden;
+  color: black;
+  font-family: mySecondFont;
+  font-size: 28px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  width: auto;
+  height: 75px;
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  top: -23%;
+  left: 9%;
+}
+*/
+#textBox {
+  font-size: 20px;
+  font-family: mySecondFont;
+  color: white;
+  height:auto;
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  padding-top: 30px;
+  text-align: left;
+
+  /*border: 5px solid red; */
+}
+.choice {
+  font-size: 20px;
+  font-family: mySecondFont;
+  width: 60%;
+  height: auto;
+  border-radius: 25px;
+  border: 5px solid rgb(46, 70, 173);
+  background-color: rgb(46, 70, 173);
+  margin: 1%;
+  color: white;
+  padding: 5px;
+  /*display: none; */
+
+}
+.choice:hover {
+  background-color: #c4cdff;
+  border: 5px solid #c4cdff;
+  color: rgb(46, 70, 173);
+}
+#choices {
+  /* border: 5px solid red;  FOR TESTING */
+  overflow: hidden;
+}
+
+#nextButton {
+  width:36px;
+  height: 36px;
+  background-image: url("images/next-arrow-unclick.png");
+  background-size:35px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  float: right;
+  /*position: absolute;*/
+  margin-bottom: 1%;
+  margin-right: 1%;
+
+}
+
+#nextButton:hover {
+  background-image: url("images/next-arrow-hover.png");
+  background-size:35px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+
+}
+#welcomeButton {
+  background-color: rgb(46, 70, 173);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 12px;
+  position: fixed;
+  bottom: 10px;
+  right: 7px;
+  z-index: 1;
+
+}
+#welcomeButton:hover {
+  background-color: #339989;
+}
+
+/* DIFF SILOHUETTES*/
+#diverse_silhouettes {
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#nondiverse_silhouettes {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#boss_silhouette {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/ai_vs_manual_background.png')">
+<head>
+  <link rel="stylesheet" href="choice_template.css">
+  <script src="newscript.js"></script>
+  <script>
+  </script>
+</head>
+<body onload="scene5()">
+  <h1> CHOOSE YOUR OWN ADVENTURE GAME</h1>
+  <div id="bottomSection">
+    <!-- would toggle display and change inner html-->
+    <div id="textAndChoicesBox">
+
+      <p id="textBox">
+        Now that funding is out of the way, you need to get specific about
+        what kinds of information your security system will be using.
+      </p>
+      <div id="choices" style="display:none">
+        <button id="choice1" class="choice" onclick="document.location='scene6.html'">
+            Use AI to check footage
+        </button>
+        <button id="choice2" class="choice"> <!-- POSSIBLE ENDING -->
+            Manually check footage
+        </button>
+      </div>
+      <button id="nextButton" onclick="next5()">
+      </button>
+    </div>
+    <button id="welcomeButton" onclick="document.location='index.html'">
+     Go back to <br> welcome page
+    </button>
+ </div>
+</body>
+</html>
