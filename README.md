@@ -6,8 +6,8 @@ As the final project of our Ethics and Technology course, Madison Shimbo, Baelul
 ![Screenshot of Choice Page](/README_images/choice_page.png)
 ![Screenshot of Possible Ending Page](/README_images/possible_ending_page.png)
 
-**Languages/Technology Used: HTML, CSS, JavaScript**
+### **Languages/Technology Used: HTML, CSS, JavaScript** ###
 
-HOW TO PLAY: Click [here](https://codenamemadison.github.io/choose_your_own_adventure_story_project/) to play
+## HOW TO PLAY: Click [here](https://codenamemadison.github.io/choose_your_own_adventure_story_project/) to play ##
 
 
