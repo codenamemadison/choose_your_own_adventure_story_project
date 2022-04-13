@@ -2,6 +2,10 @@
 
 As the final project of our Ethics and Technology course, Madison Shimbo, Baelul Haile, and Amber Martinez decided to create a web-interactive Choose Your Own Adventure Game. The game is focused on exploring the uses of Artificial Intelligence and the ethical tensions/issues that could possibly be faced by having the user play the main character in a story revolving around these themes. Each decision made affects the next events and possible choices of the plot so be careful what you choose!
 
-** Languages/Technology Used: HTML, CSS, JavaScript **
+<img width="1254" alt="Screen Shot 2022-04-13 at 6 06 23 AM" src="https://user-images.githubusercontent.com/42008799/163155381-14155597-5e90-4984-973c-fcb11b01efef.png">
 
-How to Play: Click [here](https://codenamemadison.github.io/choose_your_own_adventure_story_project/) to play
+**Languages/Technology Used: HTML, CSS, JavaScript**
+
+HOW TO PLAY: Click [here](https://codenamemadison.github.io/choose_your_own_adventure_story_project/) to play
+
+
